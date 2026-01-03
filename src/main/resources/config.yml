@@ -1,0 +1,8 @@
+# TransferPlugin Configuration
+
+# Default server settings (used for tab completion suggestions)
+default-host: "play.example.com"
+default-port: 25565
+
+# Message prefix (supports color codes with &)
+prefix: "&8[&bTransfer&8] "

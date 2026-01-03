@@ -1,0 +1,23 @@
+name: TransferPlugin
+version: ${project.version}
+main: pl.pitruk.transferPlugin.TransferPlugin
+api-version: "1.20"
+description: Plugin that enables player transfers to other servers
+author: pitruk
+
+commands:
+  transfer:
+    description: Transfers a player to another server
+    usage: |
+      /transfer <host> [port] - Transfer yourself to the specified server
+      /transfer <player> <host> [port] - Transfer the specified player to a server
+    permission: transfer.use
+    permission-message: "&cYou don't have permission to use this command!"
+
+permissions:
+  transfer.use:
+    description: Allows using /transfer <host> <port> to transfer yourself
+    default: op
+  transfer.other:
+    description: Allows using /transfer <player> <host> <port> to transfer other players
+    default: op
